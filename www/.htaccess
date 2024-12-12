@@ -1,0 +1,14 @@
+RewriteEngine On
+ErrorDocument 400 https://prodvizhenie-saytov.company/404
+ErrorDocument 404 /404
+ErrorDocument 500 https://prodvizhenie-saytov.company/404
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+RewriteRule ^index.html$ / [QSA,R]
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+Redirect 301 /nedorogie-sayti/ https://prodvizhenie-saytov.company/nedorogie-sayti
+
+Redirect 301 /razrabotka-saytov https://prodvizhenie-saytov.company/sayt-pod-klyuch

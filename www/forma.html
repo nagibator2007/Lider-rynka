@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://prodvizhenie-saytov.company/favicon.svg" type="image/svg+xml ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Оставить заявку на сотрудничество с компанией - Лидер Рынка</title>
+	<meta name="description" content="Форма обратной связи для начала сотрудничества с компание Лидер Рынка">
+</head>
+<body>
+    <header class="header-avtomatizaciya">
+        <section class="header-fixed">
+            <div class="wrapper">
+                <div class="header-nav">
+                    <div class="left-part">
+                        <button class="icon-button humburger -left" onclick="toggleMenu()"><i class="icon-humb"></i></button>
+                        <div class="branding"><a href="index.html"><img src="assets/img/logopre.png" alt=""></a></div>
+                    </div>
+                  <div class="header-right">
+                    <nav class="nav ">
+                        <a class="menu-link" href="index.html"><span>Главная</span></a>
+                        <div id="myDropdown" class="dropdown">
+                            <a class="menu-link drop-menu" href="uslugi.html"><span>Услуги</span></a>
+                            <div id="myDropdown-content" class="dropdown-content">
+                                <a href="razrabotka-saytov.html">РАЗРАБОТКА САЙТОВ</a>
+                                <a href="seo-prodvizhenie.html">SEO-ПРОДВИЖЕНИЕ</a>
+                                <a href="kontekstnaya-reklama.html">КОНТЕКСТНАЯ РЕКЛАМА</a>
+                                <a href="avtomatizaciya.html">АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</a>
+                                <a href="index.html#tariff">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</a>
+                            </div>
+                        </div>
+                        <a class="menu-link" href="blog.html"><span>Кейсы</span></a>
+                        <a class="menu-link" href="portfolio.html"><span>Портфолио</span></a>
+                        <a class="menu-link" href="nedorogie-sayti.html"><span>Готовые решения</span></a>
+                        <a class="menu-link" href="likbez.html"><span>ЛИКБЕЗ</span></a>
+                    </nav>
+                    <div class="right-part">
+                        <a href="forma.html" class="btn-optional btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="humburger-menu">
+        <div class="menu-bar">
+            <button class="close-bar" onclick="closeMenu()"><i class="icon-bar"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></i></button>
+        </div>
+        <div class="second-menu-nav">
+            <ul class="second-menu">
+                <li class="second-item"><a href="index.html"><span>Главная</span></a></li>
+                <div class="burger-dropdown">
+                    <li class="second-item"><a class="burger-drop-menu" href="uslugi.html"><span>Услуги</span></a></li>
+                    <div  class="burger-dropdown-content">
+                        <a class="burger-dropdown-item" href="razrabotka-saytov.html"><span>РАЗРАБОТКА САЙТОВ</span></a>
+                        <a class="burger-dropdown-item" href="seo-prodvizhenie.html"><span>SEO-ПРОДВИЖЕНИЕ</span></a>
+                        <a class="burger-dropdown-item" href="kontekstnaya-reklama.html"><span>КОНТЕКСТНАЯ РЕКЛАМА</span></a>
+                        <a class="burger-dropdown-item" href="avtomatizaciya.html"><span>АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</span></a>
+                        <a class="burger-dropdown-item" href="index.html#tariff"><span>КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</span></a>
+
+                    </div>
+                </div>
+                <div class="mobile-drop-down">
+                    <div class="info-mobile" onclick="toggleContentMobile(this)">
+                        <div class="info-btn-mobile mobile-dropdown">
+                            <h6><span>Услуги</span></h6>
+                            <div class="info-text-mobile">
+                                <a href="razrabotka-saytov.html">Разработка сайтов</a>
+                                <a href="seo-prodvizhenie.html">SEO-Продвижение</a>
+                                <a href="kontekstnaya-reklama.html">Контекстная реклама</a>
+                                <a href="avtomatizaciya.html">Автоматизация процессов</a>
+                                <a href="index.html#tariff">Комплексное продвижение сайтов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="second-item"><a href="blog.html"><span>Кейсы</span></a></li>
+                <li class="second-item"><a href="portfolio.html"><span>Портфолио</span></a></li>
+                <li class="second-item"><a href="nedorogie-sayti.html"><span>Готовые решения</span></a></li>
+                <li class="second-item"><a href="likbez.html"><span>ЛИКБЕЗ</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-nub">
+            <p>+7 343 206 47 96</p>
+        </div>
+    </section>
+    <main>
+        <section class="form-send">
+            <section class="send">
+                <div class="container">
+                    <div class="send-wrapper">
+                        <div class="send-left">
+                            <div class="send-title">
+                                <p>Обратная связь</p>
+                                <h2>Пора начинать работу.</h2>
+                            </div>
+                            <div class="send-img">
+                                <img width="336px" height="226px" src="assets/img/man.png" alt="">
+                            </div>
+                            <p class="send-subtitle">Мы обладаем большим опытом в реализации интересных проектов. И еще гораздо бОльшим желанием реализовать новые задумки наших клиентов. Вы с нами?</p>
+                        </div>
+                        <div class="send-right">
+                            <script data-b24-form="inline/21/lhug59" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b20238818/crm/form/loader_21.js');</script>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="under-line">
+                        <div class="divider-set"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="logo-footer">
+                    <img src="assets/img/logopre.png" alt="">
+                    <div class="footer-link">
+                        <strong>
+                            <a href="https://vk.com/sozdaniesaytovekb">VK.</a>
+                            &nbsp;/&nbsp;&nbsp;
+                            <a href="https://www.youtube.com/channel/UCCBKaQ6S506gMABGScOCZCg">YouTube.</a>
+                            &nbsp;&nbsp;/&nbsp;&nbsp;
+                            <a href="https://dzen.ru/id/5ebfd20fa6e4861b14010105?utm_referrer=lider-rynka-seo-prodvizhenie-sayta.com">Dzen.</a>
+                        </strong>
+                    </div>
+                </div>
+                 <div class="contact">
+                    <h3>Екатерибург</h3>
+                    <strong>
+                        <b>Ул. Чернышевского 16</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+						<br>
+						ООО "Лидер Рынка"
+						<br>
+						ИНН:6676008274
+                    </strong>
+                </div>
+                <div class="contact">
+                    <h3>Санкт-Петербург</h3>
+                    <strong>
+                        <b>Ул. Большая Морская 3-5</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+                    </strong>
+                </div>
+                <div class="sub">
+                    <h3>Подписка на полезные материалы</h3>
+                    <form action="/" class="sub-form">
+                        <div class="sub-email-top">
+                            <input type="email" placeholder="Email..." name="your-email" class="sub-email">
+                            <button class="btn-sub">Подписаться</button>
+                        </div>
+                        <label for="checkbox-101[]" class="sub-check">
+                            <input type="checkbox" id="checkbox-101[]" name="checkbox-101[]" value="Я согласен на рассылку оповещений о новых материалах на указанную почту">
+                            <span class="check-text">Я согласен на рассылку оповещений о новых материалах на указанную почту</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+</footer>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/header-fixed.js"></script>
+    <script src="assets/js/drop-menu-uslugi.js"></script>
+    <script src="assets/js/main-burger-menu.js"></script>
+    <script src="assets/js/mobile-block-info-tabs.js"></script>
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96321582, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96321582" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</body>
+</html>

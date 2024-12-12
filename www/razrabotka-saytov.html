@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://prodvizhenie-saytov.company/favicon.svg" type="image/svg+xml ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <title>Разработка сайтов под ключ - Лидер Рынка</title>
+	 <meta name="description" content="сайт под ключ - эффективный, привлекающий клиентов. От технической подготовки до наполнения контентом. разработка сайтов с оригинальным дизайном">
+</head>
+<body>
+    <header>
+        <section class="header-fixed">
+            <div class="wrapper">
+                <div class="header-nav">
+                    <div class="left-part">
+                        <button class="icon-button humburger -left" onclick="toggleMenu()"><i class="icon-humb"></i></button>
+                        <div class="branding brand-black"><a href="index.html"><img src="logo black.png" alt=""></a></div>
+                    </div>
+                  <div class="header-right">
+                    <nav class="nav ">
+                        <a class="menu-link2" href="index.html"><span>Главная</span></a>
+                        <div id="myDropdown" class="dropdown">
+                            <a class="menu-link drop-menu" href="uslugi.html"><span class="current-menu-item">Услуги</span></a>
+                            <div id="myDropdown-content" class="dropdown-content">
+                                <a href="razrabotka-saytov.html"><span class="current-menu-item">РАЗРАБОТКА САЙТОВ</span></a>
+                                <a href="seo-prodvizhenie.html">SEO-ПРОДВИЖЕНИЕ</a>
+                                <a href="kontekstnaya-reklama.html">КОНТЕКСТНАЯ РЕКЛАМА</a>
+                                <a href="avtomatizaciya.html">АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</a>
+                                <a href="index.html#tariff">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</a>
+                            </div>
+                        </div>
+                        <a class="menu-link2" href="blog.html"><span>Кейсы</span></a>
+                        <a class="menu-link2" href="portfolio.html"><span>Портфолио</span></a>
+                        <a class="menu-link2" href="nedorogie-sayti.html"><span>Готовые решения</span></a>
+                        <a class="menu-link2" href="likbez.html"><span>ЛИКБЕЗ</span></a>
+                    </nav>
+                    <div class="right-part">
+                        <a href="forma.html" class="btn-optional btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="header-wrapper">
+                    <div class="header-content">
+                        <div class="header-title">
+                            <div class="title-text">
+                                <h1>Разработка сайтов под ключ</h1>
+                            </div>
+                            <a href="forma.html" class="btn-con">Связаться</a>
+                        </div>
+                        <div class="header-img-wrapper">
+                           <img src="logo bez fona3.png" alt="Лидер Рынка">
+                            <a href="forma.html" class="btn-con">Связаться</a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </header>
+    <section class="humburger-menu">
+        <div class="menu-bar">
+            <button class="close-bar" onclick="closeMenu()"><i class="icon-bar"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></i></button>
+        </div>
+        <div class="second-menu-nav">
+            <ul class="second-menu">
+                <li class="second-item"><a href="index.html"><span>Главная</span></a></li>
+                <div class="burger-dropdown">
+                    <li class="second-item"><a class="burger-drop-menu" href="uslugi.html"><span  class="current-menu-item">Услуги</span></a></li>
+                    <div  class="burger-dropdown-content">
+                        <a class="burger-dropdown-item" href="razrabotka-saytov.html"><span class="current-menu-item">РАЗРАБОТКА САЙТОВ</span></a>
+                        <a class="burger-dropdown-item" href="seo-prodvizhenie.html"><span>SEO-ПРОДВИЖЕНИЕ</span></a>
+                        <a class="burger-dropdown-item" href="kontekstnaya-reklama.html"><span>КОНТЕКСТНАЯ РЕКЛАМА</span></a>
+                        <a class="burger-dropdown-item" href="avtomatizaciya.html"><span>АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</span></a>
+                        <a class="burger-dropdown-item" href="index.html#tariff"><span>КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</span></a>
+
+                    </div>
+                </div>
+                <div class="mobile-drop-down">
+                    <div class="info-mobile" onclick="toggleContentMobile(this)">
+                        <div class="info-btn-mobile mobile-dropdown">
+                            <h6><span>Услуги</span></h6>
+                            <div class="info-text-mobile">
+                                <a href="razrabotka-saytov.html">Разработка сайтов</a>
+                                <a href="seo-prodvizhenie.html">SEO-Продвижение</a>
+                                <a href="kontekstnaya-reklama.html">Контекстная реклама</a>
+                                <a href="avtomatizaciya.html">Автоматизация процессов</a>
+                                <a href="index.html#tariff">Комплексное продвижение сайтов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="second-item"><a href="blog.html"><span>Кейсы</span></a></li>
+                <li class="second-item"><a href="portfolio.html"><span>Портфолио</span></a></li>
+                <li class="second-item"><a href="nedorogie-sayti.html"><span>Готовые решения</span></a></li>
+                <li class="second-item"><a href="likbez.html"><span>ЛИКБЕЗ</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-nub">
+            <p>+7 343 206 47 96</p>
+        </div>
+    </section>
+    <main>
+        <section class="price">
+            <div class="container">
+                <div class="price-wrapper">
+                    <h1>Давайте рассчитаем стоимость разработки сайта под ключ</h1>
+                    <div class="price-calculation">
+                        <div class="calculation-left">
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design">Есть ли у вас техническое задание для сайта?</div>
+                                <form action="" id="form-field-design">
+                                    <div class="price-block">
+                                        <input name="form_fields[design]" value="50000" id="form-field-design-0" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design-0">Нет, нужна ваша помощь </label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design]" value="0" id="form-field-design-1" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design-1">Нет, оно нам не нужно </label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design]" value="0" id="form-field-design-2" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design-2">Да</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design2">Какой тип сайта вам нужен?</div>
+                                <form id="form-field-design2" action="">
+                                    <div class="price-block">
+                                        <input name="form_fields[design2]" value="50000" id="form-field-design2-0" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design2-0">Сайт компании с услугами </label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design2]" value="75000" id="form-field-design2-1" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design2-1">Интернет-магазин </label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design2]" value="85000" id="form-field-design2-2" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design2-2">Сайт компании с услугами и товарами </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design3">Какой тип дизайна вам нужен?</div>
+                                <form id="form-field-design3" action="">
+                                    <div class="price-block">
+                                        <input name="form_fields[design3]" value="50000" id="form-field-design3-0" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design3-0">Оптимальный</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design3]" value="75000" id="form-field-design3-1" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design3-1">Премиальный</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design3]" value="150000" id="form-field-design3-2" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design3-2">Уникальный</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design4">Выберите CMS</div>
+                                <form id="form-field-design4" action="">
+                                    <div class="price-block">
+                                        <input name="form_fields[design4]" value="0" id="form-field-design4-0" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design4-0">WordsPress</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design4]" value="40900" id="form-field-design4-1" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design4-1">Bitrix</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design5">Есть ли в вашем сайте что-то такое, чего нет НИГДЕ? В том числе на известных вам сайтах</div>
+                                <form id="form-field-design5" action="">
+                                    <div class="price-block">
+                                        <input name="form_fields[design5]" value="150000" id="form-field-design5-0" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design5-0">Конечно!</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design5]" value="85000" id="form-field-design5-1" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design5-1">Совсем чуть-чуть</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[design5]" value="0" id="form-field-design5-2" name="form_fields[design]" type="radio">
+                                        <label for="form-field-design5-2">Нет, всё стандартно</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="price-site">
+                                <div class="field-label" for="form-field-design6">Дополнительные плюшки</div>
+                                <form id="form-field-design6" action="">
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="50000" id="form-field-design6-0" type="checkbox">
+                                        <label for="form-field-design6-0">Оптимизация контента</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="11000" id="form-field-design6-1" type="checkbox">
+                                        <label for="form-field-design6-1">Установка и настройка CMS</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="21500" id="form-field-design6-2" type="checkbox">
+                                        <label for="form-field-design6-2">Стартовая SEO-оптимизация</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="10300" id="form-field-design6-3" type="checkbox">
+                                        <label for="form-field-design6-3">Проработка воронки продаж</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="25000" id="form-field-design6-4" type="checkbox">
+                                        <label for="form-field-design6-4">Интеграция с CRM</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="5100" id="form-field-design6-5" type="checkbox">
+                                        <label for="form-field-design6-5">Установка систем аналитики</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="5300" id="form-field-design6-6" type="checkbox">
+                                        <label for="form-field-design6-6">Настройка способов оплаты</label>
+                                    </div>
+                                    <div class="price-block">
+                                        <input name="form_fields[designpl][]" value="15600" id="form-field-design6-8" type="checkbox">
+                                        <label for="form-field-design6-8">Подключение эквайринга</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="calculation-right">
+                            <div class="calculate-res">
+                                <label for="field-res">Стоимость разработки сайта: </label>
+                                <div class="calculated-fields-form">
+                                    <span>от </span>
+                                    <span class="filed-res-value">0</span>
+                                    <span> рублей</span>
+                                    <input style="display:none!important;" id="field-res" type="text">
+                                </div>
+                            </div>
+                            <div class="order-btn">
+                                <a class="btn-prom btn-sell btn-sell-bottom" href="forma.html">Заказать оригинальный сайт</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="view">
+            <div class="container">
+                <div class="view-wrapper">
+                    <div class="view-title">
+                        <h2>Выходим за рамки бюджета?</h2>
+                        <h6>Давайте рассмотрим готовые решения.</h6>
+                    </div>
+                    <div class="view-info">
+                        <img width="420px" height="280px" src="assets/img/woman-2.png" alt="">
+                        <div class="view-info-btn">
+                            <a href="nedorogie-sayti.html" class="btn-prom btn-sell btn-sell-top view-btn">Смотреть готовые решения</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="development">
+            <div class="container">
+                <div class="development-wrapper">
+                    <h2>Почему разработка сайтов столько стоит</h2>
+                    <div class="development-info dev-1">
+                        <img src="assets/img/development-1.jpg" alt="">
+                        <div class="development-text">
+                            <h4>ОПЛАТА РАБОТЫ СОТРУДНИКОВ</h4>
+                            <div class="development-subtitle">
+                                <p>В общем-то, этим все сказано. Дальше подробнее.</p>
+                                <p>Разработка сайта – это крайне сложный процесс в котором задействованы несколько сотрудников разных специализаций.</p>
+                                <p>Чем больше сотрудников вовлечены в процесс разработки сайта, тем выше будет себестоимость создания сайта и, соответственно, стоимость для клиента.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development-info">
+                        <div class="development-text">
+                            <h4>СОЗДАНИЕ ДИЗАЙНА ДЛЯ САЙТА</h4>
+                            <div class="development-subtitle">
+                                <p>Этой задачей занимается не один человек, как может показаться. Можно сделать очень красивый сайт, но пользователь просто не поймет как с ним обращаться. Поэтому вместе с web-дизайнером на этом этапе работает ui/ux-дизайнер. Иногда это два разных человека.</p>
+                                <p>ui/ux-дизайнер отвечает за проработку пользовательского интерфеса и разработки карты поведения пользователя. Если проще – как и что должен делать посетитель вашего сайта. Это самый базовый этап разработки сайта от которого зависит вся его будущая “жизнь” и насколько она будет успешной.</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/development-2.jpeg" alt="">
+                    </div>
+                    <div class="development-info">
+                        <img src="assets/img/development-3.jpg" alt="">
+                        <div class="development-text">
+                            <h4>ВЕРСТКА</h4>
+                            <div class="development-subtitle">
+                                <p>Нарисованный дизайн необходимо превратить в код. Чтобы компьютер понимал, что он должен не просто показать картинку, а дать возможноть пользователю с ней взаимодействовать.</p>
+                            <p>Этим занимается отдельный специалист. Благодаря ему сайт отлично выглядит на любом устройстве и любом размере монитора.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development-info">
+                        <div class="development-text">
+                            <h4>ДВИЖОК САЙТА ИЛИ CMS.</h4>
+                            <div class="development-subtitle">
+                                <p>Всем этим велеколепием должен мочь управлять конечный пользователь. Для этого готовый сайт укрепляют CMS (content managment system). Система управления контентом.</p>
+                                <p>Их существует несчетное количество. У всех есть свои плюсы и минусы. Идеального решения нет. Можно даже разработать индивидуальную CMS для вашего проекта (другой такой не будет ни у кого).</p>
+                                <p>За этот этап разработки сайта отвечает WEB-программист.</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/development-4.jpg" alt="">
+                    </div>
+                    <div class="development-info">
+                        <img src="assets/img/development-5.jpg" alt="">
+                        <div class="development-text">
+                            <h4>СРОК РАЗРАБОТКИ И ДОП.УСЛУГИ</h4>
+                            <div class="development-subtitle">
+                                <p>Часто бывает такое, что клиенту надо сделать индивидуальный модуль на сайт. Например, расчет стоимости металла, возможность онлайн связи с клиентами через сайт (онлайн-консультация врача) и так далее. Это все увеличивает срок и стоимость разработки сайта под ключ.</p>
+                            <p>В среднем, наша компания успевает разрабатывать сайты за 3-4 месяца. Включая весь документооборот и клиентские правки.</p>
+                            <p>Из стоимости оплаты труда вышеперечисленных сотрудников и формируется стоимость разработки сайта. Чем больше компания, больше сотрудников – тем выше стоимость создания сайта.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development-info">
+                        <div class="development-text">
+                            <h4>ИТОГИ</h4>
+                           <div class="development-subtitle">
+                            <p>Не всегда то, что дороже – лучше. Но чаще всего, что лучше – дороже.</p>
+                            <p>Стоимость разработки сайта зависит от работников которые его делают, их квалификации и их количества.</p>
+                            <p>Сами компании получают прибыль от разработки сайта в районе 15-25%.</p>
+                            <p>Выбор подрядчика для создания сайта должен быть основан на экономических возможностях и личных предпочтениях. Один и тот же сайт в разных компаниях может стоить и 200 и 900 тысяч рублей. Но самое важное из этого текста: Никогда не заказывай сайт до 50 тысяч рублей.</p>
+                           </div>
+                        </div>
+                        <img src="assets/img/development-6.jpg" alt="">
+                    </div>
+                    <div class="priver"></div>
+                </div>
+            </div>
+        </section>
+        <section class="our">
+            <div class="container">
+                <div class="our-wrapper">
+                    <h2>Вот почему выбирают нас</h2>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Конфиденциальность</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse " style="">
+                            <div class="accordion-body">
+                                <p>Обязательное соглашение о неразглашении коммерческой тайны (NDA)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Простой язык</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse " style="">
+                            <div class="accordion-body">
+                                <p>Чтобы клиенту было проще понимать о чем идет речь, мы переводим сложные термины на простой язык</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Успешные кейсы</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse " style="">
+                            <div class="accordion-body">
+                                <p>Мы УЖЕ помогли множеству компаний найти клиентов в интернете. Поможем и вам!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Компетентность</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse " style="">
+                            <div class="accordion-body"><p>Все работы выполняются строго по техническому заданию.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Креативность</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse ">
+                            <div class="accordion-body">
+                                <p>Наши идеи всегда на шаг впереди конкурентов. Всё, чтобы быть Лидером Рынка!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Комплексный подход</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse " style="">
+                            <div class="accordion-body">
+                                <p>Смотрим на задачи с разных углов и предлагаем множество эффективных решений</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Выгодные цены</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse ">
+                            <div class="accordion-body">
+                                <p>Все услуги в одном окошке - так мы гарантируем результат и выгодные цены</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>Отчетность</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse ">
+                            <div class="accordion-body">
+                                <p>Фирменные отчеты по каждой из услуг</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-skill" onclick="toggleContent(this)">
+                        <div class="our-btn">
+                            <h6>И много чего еще...</h6>
+                            <button><i class="plus"></i></button>
+                        </div>
+                        <div class="accordion-collapse">
+                            <div class="accordion-body">
+                                <p>Что можно узнать только во время работы с нами</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="send">
+            <div class="container">
+                <div class="send-wrapper">
+                    <div class="send-left">
+                        <div class="send-title">
+                            <p>Обратная связь</p>
+                            <h2>Пора начинать работу.</h2>
+                        </div>
+                        <div class="send-img">
+                            <img width="336px" height="226px" src="assets/img/man.png" alt="">
+                        </div>
+                        <p class="send-subtitle">Мы обладаем большим опытом в реализации интересных проектов. И еще гораздо бОльшим желанием реализовать новые задумки наших клиентов. Вы с нами?</p>
+                    </div>
+                    <div class="send-right">
+                        <form method="post" action="/" class="send-form">
+                            <div class="line">
+                                <input name="name" autocomplete="given-name" type="string">
+                                <div class="form-control-label">
+                                    <p> Имя <span style="color: red;">*</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="line">
+                                <input type="string">
+                                <div class="form-control-label">
+                                    <p>Сайт</p>
+                                </div>
+                                
+                            </div>
+                            <div class="line">
+                                <input type="tel" name="phone" autocomplete="tel">
+                                <div class="form-control-label">
+                                    <p> Телефон <span style="color: red;">*</span></p>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="line">
+                                <textarea name="" id=""></textarea>
+                                <div class="form-control-label">
+                                    <p>Комментарий</p>
+                                </div>
+                                
+                            </div>
+                            <label for="rule-checkbox" class="text-rule" for="">
+                                <input type="checkbox" id="rule-checkbox" onclick="this.blur()">
+                                <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+                                <span style="font-size: 11px; line-height: 1; color: red;">*</span>
+                            </label>
+                            <button type="submit" class="send-btn">Отправить</button>
+                            <div class="form-sign">
+                                <a href="#">Сообщить о нарушении</a>
+                                <span class="form-help" title="Компания Битрикс24 не несёт ответственности за содержимое формы, но вы можете сообщить нам о нарушении"></span>
+                                <div class="form-sign-info">
+                                    <span class="form-sign-info-text">Заряжено</span>
+                                    <span class="form-sign-info-bx">Битрикс</span>
+                                    <span class="form-sign-info-24">24</span>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                <div class="under-line">
+                    <div class="divider-set"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="logo-footer">
+                    <img src="assets/img/logopre.png" alt="">
+                    <div class="footer-link">
+                        <strong>
+                            <a href="https://vk.com/sozdaniesaytovekb">VK.</a>
+                            &nbsp;/&nbsp;&nbsp;
+                            <a href="https://www.youtube.com/channel/UCCBKaQ6S506gMABGScOCZCg">YouTube.</a>
+                            &nbsp;&nbsp;/&nbsp;&nbsp;
+                            <a href="https://dzen.ru/id/5ebfd20fa6e4861b14010105?utm_referrer=lider-rynka-seo-prodvizhenie-sayta.com">Dzen.</a>
+                        </strong>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Екатерибург</h3>
+                    <strong>
+                        <b>Ул. Чернышевского 16</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+                    </strong>
+                </div>
+                <div class="contact">
+                    <h3>Санкт-Петербург</h3>
+                    <strong>
+                        <b>Ул. Большая Морская 3-5</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+                    </strong>
+                </div>
+                <div class="sub">
+                    <h3>Подписка на полезные материалы</h3>
+                    <form action="/" class="sub-form">
+                        <div class="sub-email-top">
+                            <input type="email" placeholder="Email..." name="your-email" class="sub-email">
+                            <button class="btn-sub">Подписаться</button>
+                        </div>
+                        <label for="checkbox-101[]" class="sub-check">
+                            <input type="checkbox" id="checkbox-101[]" name="checkbox-101[]" value="Я согласен на рассылку оповещений о новых материалах на указанную почту">
+                            <span class="check-text">Я согласен на рассылку оповещений о новых материалах на указанную почту</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/black-header-fixed.js"></script>
+    <script src="assets/js/drop-menu-uslugi.js"></script>
+    <script src="assets/js/main-burger-menu.js"></script>
+    <script src="assets/js/block-info-tabs.js"></script>
+    <script src="assets/js/background-ceil.js"></script>
+    <script src="assets/js/sayt-pod-klyuch-calculater.js"></script>
+    <script src="assets/js/mobile-block-info-tabs.js"></script>
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96321582, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96321582" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</body>
+</html>

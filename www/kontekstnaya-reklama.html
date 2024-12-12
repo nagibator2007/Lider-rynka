@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://prodvizhenie-saytov.company/favicon.svg" type="image/svg+xml ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <title>Настройка и ведение контекстной рекламы - компания Лидер Рынка</title>
+	 <meta name="description" content="Настройка и ведение контекстной рекламы от компании Лидер Рынка. Запуск рекламы от одного до трех дней. Личный кабинет и персональный менеджер.">
+</head>
+<body>
+    <header>
+        <section class="header-fixed">
+            <div class="wrapper">
+                <div class="header-nav">
+                    <div class="left-part">
+                        <button class="icon-button humburger -left" onclick="toggleMenu()"><i class="icon-humb"></i></button>
+                        <div class="branding brand-black"><a href="index.html"><img src="logo black.png" alt=""></a></div>
+                    </div>
+                  <div class="header-right">
+                    <nav class="nav ">
+                        <a class="menu-link2" href="index.html"><span>Главная</span></a>
+                        <div id="myDropdown" class="dropdown">
+                            <a class="menu-link2 drop-menu" href="uslugi.html"><span class="current-menu-item">Услуги</span></a>
+                            <div id="myDropdown-content" class="dropdown-content">
+                                <a href="razrabotka-saytov.html">РАЗРАБОТКА САЙТОВ</a>
+                                <a href="seo-prodvizhenie.html">SEO-ПРОДВИЖЕНИЕ</a>
+                                <a href="kontekstnaya-reklama.html"><span class="current-menu-item">КОНТЕКСТНАЯ РЕКЛАМА</span></a>
+                                <a href="avtomatizaciya.html">АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</a>
+                                <a href="index.html#tariff">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</a>
+                            </div>
+                        </div>
+                        <a class="menu-link2" href="blog.html"><span>Кейсы</span></a>
+                        <a class="menu-link2" href="portfolio.html"><span>Портфолио</span></a>
+                        <a class="menu-link2" href="nedorogie-sayti.html"><span>Готовые решения</span></a>
+                        <a class="menu-link2" href="likbez.html"><span>ЛИКБЕЗ</span></a>
+                    </nav>
+                    <div class="right-part">
+                        <a href="forma.html" class="btn-optional btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="header-wrapper">
+                    <div class="header-content">
+                        <div class="header-title">
+                            <div class="title-text">
+                                <h1>Настройка и ведение контекстной рекламы</h1>
+                            </div>
+                            <a href="forma.html" class="btn-con">Связаться</a>
+                        </div>
+                        <div class="header-img-wrapper">
+                              <img src="logo bez fona3.png" alt="Лидер Рынка">
+                            <a href="forma.html" class="btn-con">Связаться</a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </header>
+    <section class="humburger-menu">
+        <div class="menu-bar">
+            <button class="close-bar" onclick="closeMenu()"><i class="icon-bar"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></i></button>
+        </div>
+        <div class="second-menu-nav">
+            <ul class="second-menu">
+                <li class="second-item"><a href="index.html"><span>Главная</span></a></li>
+                <div class="burger-dropdown">
+                    <li class="second-item"><a class="burger-drop-menu" href="uslugi.html"><span  class="current-menu-item">Услуги</span></a></li>
+                    <div  class="burger-dropdown-content">
+                        <a class="burger-dropdown-item" href="razrabotka-saytov.html"><span>РАЗРАБОТКА САЙТОВ</span></a>
+                        <a class="burger-dropdown-item" href="seo-prodvizhenie.html"><span>SEO-ПРОДВИЖЕНИЕ</span></a>
+                        <a class="burger-dropdown-item" href="kontekstnaya-reklama.html"><span class="current-menu-item">КОНТЕКСТНАЯ РЕКЛАМА</span></a>
+                        <a class="burger-dropdown-item" href="avtomatizaciya.html"><span>АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</span></a>
+                        <a class="burger-dropdown-item" href="index.html#tariff"><span>КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</span></a>
+                    </div>
+                </div>
+                <div class="mobile-drop-down">
+                    <div class="info-mobile" onclick="toggleContentMobile(this)">
+                        <div class="info-btn-mobile mobile-dropdown">
+                            <h6><span>Услуги</span></h6>
+                            <div class="info-text-mobile">
+                                <a href="razrabotka-saytov.html">Разработка сайтов</a>
+                                <a href="seo-prodvizhenie.html">SEO-Продвижение</a>
+                                <a href="kontekstnaya-reklama.html">Контекстная реклама</a>
+                                <a href="avtomatizaciya.html">Автоматизация процессов</a>
+                                <a href="index.html#tariff">Комплексное продвижение сайтов</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="second-item"><a href="blog.html"><span>Кейсы</span></a></li>
+                <li class="second-item"><a href="portfolio.html"><span>Портфолио</span></a></li>
+                <li class="second-item"><a href="nedorogie-sayti.html"><span>Готовые решения</span></a></li>
+                <li class="second-item"><a href="likbez.html"><span>ЛИКБЕЗ</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-nub">
+            <p>+7 343 206 47 96</p>
+        </div>
+    </section>
+    <main>
+	
+        <section class="sort">
+            <div class="container">
+                <div class="sort-wrapper">
+                    <h2>Виды контекстной рекламы</h2>
+                        <div class="wrapper-sort-content">
+                            <div class="reklama-content">
+                                <h3><span>от</span> 29 900</h3>
+                                <p>Реклама в поиске <span>Реклама в РСЯ</span> Баннерная реклама 
+                                    <span>Товарные кампании</span> Ретаргетинг <span>Колтрекинг</span> Настройка 
+                                    целей <span>Личный кабинет</span> Кастомные отчеты <span>Настройка пикселей 
+                                    соц.сетей</span> Видеодополнения <span>Анализ пользовательского 
+                                    поведения</span> Рекомендации по доработке воронки продаж 
+                                    <span>Разбивка объявлений на области, регионы, города</span>
+                                </p>
+                                <a class="btn-order" href="forma.html">Заказать</a>
+                            </div>
+                            <div class="reklama-sort-conent">
+                                <div class="sort-content">
+                                    <ul class="tabs-nav" role="tablist">
+                                            <li class="tabs-nav-line" style="height: 48px; transform: translateY(0px);"></li>
+                                            <li class="tabs-nav-link active" onclick="changeTab(0)">Поиск</li>
+                                            <li class="tabs-nav-link" onclick="changeTab(1)">РСЯ</li>
+                                            <li class="tabs-nav-link" onclick="changeTab(2)">Баннеры на поиске</li>
+                                            <li class="tabs-nav-link" onclick="changeTab(3)">Видеодополнения</li>
+                                    </ul>
+                                    <div class="tabs-content" role="tabpanel">
+                                        <div class="tabs-content-item active" data-title="Поиск">
+                                            <p>Эта реклама показывается в момент прямого запроса пользователем. Первые 4 и последние 4 позиции на странице поисковой выдачи заняты рекламными объявлениями.</p>
+                                            <p>Важно понимать, что вы не "покупаете" место на месяц, а соревнуетесь со всеми игроками рынка в реальном времени. У кого выше ставка за клик и больше рекламный бюджет получит больше целевых переходов.</p>
+                                            <img src="assets/img/reklama-1.png" alt="">
+                                        </div>
+                                        <div class="tabs-content-item" data-title="РСЯ">
+                                            <p>Рекламная Сеть Яндекса или РСЯ - это картинки с рекламой, которые вас преследуют. Вы искали аренду автовышки? Готовьтесь к тому, что в вашей почте, новостных сайтах, городских порталах и т.д. вы будете их видеть постоянно. Это касается любой тематики.</p>
+                                            <p>Стоимость клика здесь гораздо ниже, можно покреативить и "дожать" клиентов не захотевших оставлять заявку.</p>
+                                            <img src="assets/img/reklama-2.png" alt="">
+                                        </div>
+                                        <div class="tabs-content-item" data-title="Баннеры на поиске">
+                                            <p>Это можно считать премиальной позицией. Стоимость клика по такому объявлению будет выше чем стоимость клика на первой позиции в поиске. </p>
+                                            <p>Ваше объявление будет более явно выделено ото всех остальных и такое объявление может быть только одно на странице.</p>
+                                            <img src="assets/img/reklama-3.png" alt="" style="max-width: 640px;">
+                                        </div>
+                                        <div class="tabs-content-item" data-title="Видеодополнения">
+                                            <p>Видеодополнения работают как расширенный функционал контекстной рекламы в РСЯ.</p>
+                                            <p>Это вставки вашего рекламного видео во время просмотра видеороликов на площадках-партнерах яндекса.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sort-content sort-child">
+                                    <h3 style="font-size: 32px; margin: 0;">Клиенты здесь и сейчас!</h3>
+                                    <p>Наш любимый и самый эффективный способ для привлечения новых клинетов на сайт прямо сейчас.</p>
+                                    <p>В рамках этой услуги мы изучаем особенности вашего бизнеса, 
+                                        анализируем данные, подбираем бюджет и приводим клиентов,
+                                        которые уже ищут ваш товар/услуги. Хорошая цена? высокое качество? 
+                                        Тогда заказывай эту услугу и не ошибешься!
+                                    </p>
+                                    <p>Если есть сомнения
+                                        в качестве вашего сайта и вы смутно понимаете что такое конверсионная
+                                        воронка и карта поведения пользователя, то лучше перейдите на страницу
+                                        SEO-оптимизации.
+                                    </p>
+                                    <p>Также услуги настройки и ведения контекстной рекламы входят в стоимость комплексного продвижения сайта.
+                                        Куда дополнительно включены услуги SEO-продвижения и 10 часов доработок сайта в месяц.
+                                        </p>
+                                    <div class="btn-order-container">
+                                        <a class="btn-order" href="forma.html">Заказать</a>
+                                        <a class="btn-order" href="forma.html">Заказать</a>
+                                    </div>
+                                </div>
+                                <a class="sort-button" href="portfolio.html">Полный список работ</a>
+
+                                <div class="sort-content sort-shild2">  
+                                    <p><span>Разработка рекламной кампании по согласованному количеству ключевых фраз.</span>
+                                        Сбор аналитических данных по рекламным кампаниям Заказчика на основе статистики «Яндекс.Директ».
+                                        <span>Корректировка рекламных заголовков на основе аналитических данных.</span>
+                                        Корректировка рекламных текстов на основе аналитических данных.
+                                    <span>Корректировка быстрых ссылок на основе аналитических данных.</span>
+                                        Корректировка описания быстрых ссылок на основе аналитических данных.
+                                        <span>Корректировка описания отображения ссылок на основе аналитических данных.</span>
+                                    </p>
+                                    <p><span>Корректировка запросов с низким CTR.</span>
+                                    Анализ поисковых запросов для выноса в отдельное объявление.
+                                    <span>Корректировка поисковых площадок.</span>
+                                    Контроль параметра «Отказы».
+                                    <span>Мониторинг скликивания.</span>
+                                    A/B тестирования рекламных объявлений.
+                                    <span>Управление и оптимизация ставок за клики.</span>
+                                    Корректировки ставок на основе аналитических данных.
+                                <span>Контроль планового расхода бюджета.</span>
+                                    Своевременное сообщение Заказчику о завершении рекламной кампании и/или необходимости пополнения бюджета.
+                                    <span>Сбор аналитических данных по рекламным кампаниям Заказчика на основе системы интернет статистики «Яндекс.Метрика».</span>
+                                    Контроль параметра «Глубинапросмотра».
+                                    <span>Контроль параметра «Времяна сайте».</span>
+                                    Контроль параметра «CTR»рекламной кампании.
+                                    <span>Мониторинг «Карты ссылок».</span>
+                                     </p>
+                                </div>
+                                <div class="sort-content sort-shild3">  
+                                    <p><span>Мониторинг «Карты кликов».</span>
+                                        Мониторинг «Карты скроллинга».
+                                        <span>Формирование рекомендаций для повышения конверсии интернет-сайта.</span>
+                                        Составление ежемесячного отчета по итогам отчетного периода. Мониторинг площадок РСЯ с высокими отказами.
+                                        <span>Мониторинг площадок РСЯ с низким CTR. Подбор релевантных запросу картинок.</span>
+                                        </p>
+                                        <img class="sort-child-img" src="images/lrs3.webp" alt="">
+                                </div>
+                                <a class="sort-button" href="forma.html">Пора заказывать!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-left-mobile">
+                        <div class="info-mobile" onclick="toggleContentMobile(this)">
+                            <div class="info-btn-mobile">
+                                <h6>Поиск</h6>
+                                <div class="info-text-mobile">
+                                    <p>Эта реклама показывается в момент прямого запроса пользователем. Первые 4 и последние 4 позиции на странице поисковой выдачи заняты рекламными объявлениями.</p>
+                                    <p>Важно понимать, что вы не "покупаете" место на месяц, а соревнуетесь со всеми игроками рынка в реальном времени. У кого выше ставка за клик и больше рекламный бюджет получит больше целевых переходов.</p>
+                                    <img src="assets/img/reklama-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-mobile" onclick="toggleContentMobile(this)">
+                            <div class="info-btn-mobile">
+                                <h6>РСЯ</h6>
+                                <div class="info-text-mobile">
+                                    <p>Рекламная Сеть Яндекса или РСЯ - это картинки с рекламой, которые вас преследуют. Вы искали аренду автовышки? Готовьтесь к тому, что в вашей почте, новостных сайтах, городских порталах и т.д. вы будете их видеть постоянно. Это касается любой тематики.</p>
+                                    <p>Стоимость клика здесь гораздо ниже, можно покреативить и "дожать" клиентов не захотевших оставлять заявку.</p>
+                                    <img src="assets/img/reklama-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-mobile" onclick="toggleContentMobile(this)">
+                            <div class="info-btn-mobile">
+                                <h6>Баннеры на поиске</h6>
+                                <div class="info-text-mobile">
+                                    <p>Это можно считать премиальной позицией. Стоимость клика по такому объявлению будет выше чем стоимость клика на первой позиции в поиске. </p>
+                                    <p>Ваше объявление будет более явно выделено ото всех остальных и такое объявление может быть только одно на странице.</p>
+                                    <img src="assets/img/reklama-3.png" alt="" style="max-width: 640px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-mobile" onclick="toggleContentMobile(this)">
+                           <div class="info-btn-mobile">
+                                <h6>Видеодополнения</h6>
+                                <div class="info-text-mobile">
+                                    <p>Видеодополнения работают как расширенный функционал контекстной рекламы в РСЯ.</p>
+                                    <p>Это вставки вашего рекламного видео во время просмотра видеороликов на площадках-партнерах яндекса.</p>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+       
+        <section class="dark-scheme" style="padding-bottom: 4vh;">
+            <div class="container">
+            <h2  style = "text-shadow: 1px 3px 3px #bb5d29; text-align: center; font-size: 3.05rem; padding-top: 4vh; padding-bottom: 4vh; margin: 0;">Вот почему выбирают нас</h2>
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Конфиденциальность</h4>
+                            </div>
+                            <p>Обязательное соглашение о неразглашении коммерческой тайны (NDA)</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Простой язык</h4>
+                            </div>
+                            <p>Чтобы клиенту было проще понимать о чем идет речь, мы переводим сложные термины на простой язык</p>
+                           
+                        </div>
+                    </div>
+                   <div class="special-box-wrapper">
+                    <div class="special-box">
+                        <img src="" alt="">
+                        <div class="heading">
+                            <h4>Успешные кейсы</h4>
+                        </div>
+                        <p>Мы УЖЕ помогли множеству компаний найти клиентов в интернете. Поможем и вам!</p>
+                       
+                    </div>
+                   </div>
+                </div>
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Компетентность</h4>
+                            </div>
+                            <p>Все работы выполняются строго по техническому заданию</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Креативность</h4>
+                            </div>
+                            <p>Наши идеи всегда на шаг впереди конкурентов. Всё, чтобы быть Лидером Рынка!</p>
+                       
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Комплексный подход</h4>
+                            </div>
+                            <p>Смотрим на задачи с разных углов и предлагаем множество эффективных решений</p>
+                         
+                        </div>
+                    </div>
+                </div>
+                 <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Выгодные цены</h4>
+                            </div>
+                            <p>Все услуги в одном месте - так мы гарантируем результат и выгодные цены</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Отчетность</h4>
+                            </div>
+                            <p>Фирменные отчеты по каждой из услуг</p>
+                       
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>И много чего еще...</h4>
+                            </div>
+                            <p>Что можно узнать только во время работы с нами</p>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="send">
+            <div class="container">
+                <div class="send-wrapper">
+                    <div class="send-left">
+                        <div class="send-title">
+                            <p>Обратная связь</p>
+                            <h2>Пора начинать работу.</h2>
+                        </div>
+                        <div class="send-img">
+                            <img width="336px" height="226px" src="assets/img/man.png" alt="">
+                        </div>
+                        <p class="send-subtitle">Мы обладаем большим опытом в реализации интересных проектов. И еще гораздо бОльшим желанием реализовать новые задумки наших клиентов. Вы с нами?</p>
+                    </div>
+                    <div class="send-right">
+                        <script data-b24-form="inline/21/lhug59" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn-ru.bitrix24.ru/b20238818/crm/form/loader_21.js');</script>
+                            
+                        
+                    </div>
+                    
+                </div>
+                <div class="under-line">
+                    <div class="divider-set"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="logo-footer">
+                    <img src="assets/img/logopre.png" alt="">
+                    <div class="footer-link">
+                        <strong>
+                            <a href="https://vk.com/sozdaniesaytovekb">VK.</a>
+                            &nbsp;/&nbsp;&nbsp;
+                            <a href="https://www.youtube.com/channel/UCCBKaQ6S506gMABGScOCZCg">YouTube.</a>
+                            &nbsp;&nbsp;/&nbsp;&nbsp;
+                            <a href="https://dzen.ru/id/5ebfd20fa6e4861b14010105?utm_referrer=lider-rynka-seo-prodvizhenie-sayta.com">Dzen.</a>
+                        </strong>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Екатерибург</h3>
+                    <strong>
+                        <b>Ул. Чернышевского 16</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+						<br>
+						ООО "Лидер Рынка"
+						<br>
+						ИНН:6676008274
+                    </strong>
+                </div>
+                <div class="contact">
+                    <h3>Санкт-Петербург</h3>
+                    <strong>
+                        <b>Ул. Большая Морская 3-5</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+                    </strong>
+                </div>
+                <div class="sub">
+                    <h3>Подписка на полезные материалы</h3>
+                    <form action="/" class="sub-form">
+                        <div class="sub-email-top">
+                            <input type="email" placeholder="Email..." name="your-email" class="sub-email">
+                            <button class="btn-sub">Подписаться</button>
+                        </div>
+                        <label for="checkbox-101[]" class="sub-check">
+                            <input type="checkbox" id="checkbox-101[]" name="checkbox-101[]" value="Я согласен на рассылку оповещений о новых материалах на указанную почту">
+                            <span class="check-text">Я согласен на рассылку оповещений о новых материалах на указанную почту</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/black-header-fixed.js"></script>
+    <script src="assets/js/drop-menu-uslugi.js"></script>
+    <script src="assets/js/main-burger-menu.js"></script>
+    <script src="assets/js/block-info-tabs.js"></script>
+    <script src="assets/js/mobile-block-info-tabs.js"></script>
+    <script src="assets/js/kontekst-reklama-card-perspective.js"></script>
+    <script src="assets/js/background-ceil.js"></script>
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96321582, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96321582" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</body>
+</html>

@@ -1,0 +1,138 @@
+.faq {
+    text-align: center;
+}
+.faq-title h1{
+font-size: 3rem;
+}
+.faq-title span{
+    display: block;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.faq-content .faq-item:last-child{
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);;
+}
+  
+.tab {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.tab.active {
+    background-color: #bb5d29;
+}
+  
+.faq-content {
+    display: none;
+    margin-bottom: 50px;
+}
+.faq-content.active{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.faq-item {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.35s;
+}
+.faq-item h3{
+    transition: 0.35s;
+}
+.faq-item:hover h3{
+    color: #bb5d29;
+    transition: 0.35s;
+}
+
+.faq-item.active {
+    display: flex;
+    align-items: flex-start;
+}
+  
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+}
+.quetsion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quetsion-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.question img {
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .answer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    text-align: left;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .toggle img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .faq-item.active .toggle {
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+  }
+  
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+
+.tabs{
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.tabs li{
+   margin-bottom: 10px; 
+}
+.quetsion-title h3{
+    font-size: 1rem;
+}
+.faq-title h1{
+    font-size: 2rem;
+}
+
+}

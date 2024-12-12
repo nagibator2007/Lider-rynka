@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://prodvizhenie-saytov.company/favicon.svg" type="image/svg+xml ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <title>SEO-оптимизация и seo-продвижение сайтов - Лидер Рынка</title>
+	<meta name="description" content="seo-продвижение в топ поисковой выдачи. Продвижение самыми эффективными методамит, зарекомендовавшими себя за годы работы в разных сферах">
+</head>
+<body>
+    <header>
+        <section class="header-fixed">
+            <div class="wrapper">
+                <div class="header-nav">
+                    <div class="left-part">
+                        <button class="icon-button humburger -left" onclick="toggleMenu()"><i class="icon-humb"></i></button>
+                        <div class="branding brand-black"><a href="index.html"><img src="logo black.png" alt=""></a></div>
+                    </div>
+                  <div class="header-right">
+                    <nav class="nav ">
+                        <a class="menu-link2" href="index.html"><span>Главная</span></a>
+                        <div id="myDropdown" class="dropdown">
+                            <a class="menu-link drop-menu" href="uslugi.html"><span class="current-menu-item">Услуги</span></a>
+                            <div id="myDropdown-content" class="dropdown-content">
+                                <a href="razrabotka-saytov.html">РАЗРАБОТКА САЙТОВ</a>
+                                <a href="seo-prodvizhenie.html"><span class="current-menu-item">SEO-ПРОДВИЖЕНИЕ</span></a>
+                                <a href="kontekstnaya-reklama.html">КОНТЕКСТНАЯ РЕКЛАМА</a>
+                                <a href="avtomatizaciya.html">АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</a>
+                                <a href="index.html#tariff">КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</a>
+                            </div>
+                        </div>
+                        <a class="menu-link2" href="blog.html"><span>Кейсы</span></a>
+                        <a class="menu-link2" href="portfolio.html"><span>Портфолио</span></a>
+                        <a class="menu-link2" href="nedorogie-sayti.html"><span>Готовые решения</span></a>
+                        <a class="menu-link2" href="likbez.html"><span>ЛИКБЕЗ</span></a>
+                    </nav>
+                    <div class="right-part">
+                        <a href="forma.html" class="btn-optional btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="header-wrapper">
+                    <div class="header-content">
+                        <div class="header-title">
+                            <div class="title-text">
+                                <h1>SEO-продвижение сайтов в ТОП</span></h1>
+                            </div>
+                            <a href="forma.html" class="btn-con">Подняться в ТОП <i></i></a>
+                        </div>
+                        <div class="header-img-wrapper">
+							<img src="logo bez fona3.png" alt="Лидер Рынка">
+                            <a href="forma.html" class="btn-con">Подняться в ТОП <i></i></a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </header>
+    <section class="humburger-menu">
+        <div class="menu-bar">
+            <button class="close-bar" onclick="closeMenu()"><i class="icon-bar"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"></path></svg></i></button>
+        </div>
+        <div class="second-menu-nav">
+            <ul class="second-menu">
+                <li class="second-item"><a href="index.html"><span>Главная</span></a></li>
+                <div class="burger-dropdown">
+                    <li class="second-item"><a class="burger-drop-menu" href="uslugi.html"><span  class="current-menu-item">Услуги</span></a></li>
+                    <div  class="burger-dropdown-content">
+                        <a class="burger-dropdown-item" href="razrabotka-saytov.html"><span>РАЗРАБОТКА САЙТОВ</span></a>
+                        <a class="burger-dropdown-item" href="seo-prodvizhenie.html"><span class="current-menu-item">SEO-ПРОДВИЖЕНИЕ</span></a>
+                        <a class="burger-dropdown-item" href="kontekstnaya-reklama.html"><span>КОНТЕКСТНАЯ РЕКЛАМА</span></a>
+                        <a class="burger-dropdown-item" href="avtomatizaciya.html"><span>АВТОМАТИЗАЦИЯ ПРОЦЕССОВ</span></a>
+                        <a class="burger-dropdown-item" href="index.html#tariff"><span>КОМПЛЕКСНОЕ ПРОДВИЖЕНИЕ САЙТОВ</span></a>
+                    </div>
+                </div>
+                <div class="mobile-drop-down">
+                    <div class="info-mobile" onclick="toggleContentMobile(this)">
+                        <div class="info-btn-mobile mobile-dropdown">
+                            <h6><span>Услуги</span></h6>
+                            <div class="info-text-mobile">
+                                <a href="razrabotka-saytov.html">Разработка сайтов</a>
+                                <a href="seo-prodvizhenie.html">SEO-Продвижение</a>
+                                <a href="kontekstnaya-reklama.html">Контекстная реклама</a>
+                                <a href="avtomatizaciya.html">Автоматизация процессов</a>
+                                <a href="index.html#tariff">Комплексное продвижение сайтов</a>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="second-item"><a href="blog.html"><span>Кейсы</span></a></li>
+                <li class="second-item"><a href="portfolio.html"><span>Портфолио</span></a></li>
+                <li class="second-item"><a href="nedorogie-sayti.html"><span>Готовые решения</span></a></li>
+                <li class="second-item"><a href="likbez.html"><span>ЛИКБЕЗ</span></a></li>
+            </ul>
+        </div>
+        <div class="menu-nub">
+            <p>+7 343 206 47 96</p>
+        </div>
+    </section>
+    <main>
+	
+	<section class="development">
+            <div class="container">
+                <div class="development-wrapper">
+                    <h2>Что такое seo-продвижение?</h2>
+                    <div class="development-info dev-1">
+                        <img src="images/lrs3.webp" alt="seo оптимизация">
+                        <div class="development-text">
+                            <h4>Это - оптимизация сайта для поисковых систем</h4>
+                            <div class="development-subtitle">
+                                <p>Если у вас есть свой собственный сайт, то вам просто необходимо знать о SEO.</p>
+                                <p>Хотите <span style="color: #BB5D29;">привлечь на сайт больше посетителей</span>, чтобы иметь возможность продемонстрировать им свои товары и услуги или же просто заработать в интернете? Это желание осуществимо!</p>
+                                <p>Единственное, что для этого нужно – <span style="color: #BB5D29;">продвинуть сайт в ТОП-10</span> выдачи поисковых систем</p>
+								<h4>Яндекс и Google должны признать ваш сайт хорошим</h4>
+								<p>Поисковые системы тщательно скрывют свои критерии ранжирования сайтов.</p>
+								<p>Но мы уже много раз на практике <span style="color: #BB5D29;">доказали свои профессиональные способности!</span></p>
+								<p>Мы делаем сайты быстрее, понятнее и удобнее.</p>
+								<p><span style="color: #BB5D29;">Все для лучшего результата seo-продвижения.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="development-info">
+                        <div class="development-text">
+                            <h4>Как мы проводим SEO-оптимизацию</h4>
+                            <div class="development-subtitle">
+                                <p>Все начинается со <span style="color: #BB5D29;">сбора семантического ядра</span>, на основе которого запросы разбиваются на группы. Прорабатывается качественная структура сайта, с внутренней перелинковкой для придания веса нужным страницам. Производится <span style="color: #BB5D29;">текстовая оптимизация</span> существующих страниц и добавление новых. </p>
+								<p>В это же время осуществляется <span style="color: #BB5D29;">проверка технических ошибок на сайте</span>, таких как ссылки на несуществующие страницы, ошибки в коде и оптимизации контента.</p>
+                                 <h4>Дополнительно</h4>   
+<p>Одновременно с SEO рекомендуется использовать инструменты интернет-маркетинга: <span style="color: #BB5D29;">медийную и контекстную рекламу</span>, продвижение в социальных сетях (SMO и SMM), прямой, вирусный и email-маркетинг.</p>
+                                <p>Это даст синергетический эффект и позволит <span style="color: #BB5D29;">в разы увеличить посещаемость сайта</span>, конверсию его страниц, повысить продажи, узнаваемость бренда, обеспечить лояльность клиента.</p>
+                               								 
+							   
+                            </div>
+                        </div>
+                        <img src="images/lrs1.webp" alt="seo продвижение">
+                    </div>
+					
+                   
+                   
+                   
+                    
+                    <div class="priver"></div>
+                </div>
+            </div>
+        </section>
+	
+	
+	<section class="special-title">
+            <div class="container">
+                <div class="special-title-wrapper">
+                    <h2 class="spec-top">Над вашим проектом работают сразу несколько <span class="dynamic" id="dynamic"></span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="special">
+            <div class="container">
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>SEO СПЕЦИАЛИСТ</h4>
+                            </div>
+                            <p>Выводит идеальную формулу для продвижения вашего сайта.</p>
+                            <ul>
+                                <li class="exist">
+                                    <i class="icons">
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                    </i>
+                                    Оптимизация страниц под поисковые запросы
+                                </li>
+                                <li class="exist">
+                                <i class="icons">
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>
+                                    Оптимизация мультимедиа файлов</li>
+                                <li class="exist">
+                                    <i class="icons">
+                                        <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                        </svg>
+                                    </i>
+                                    Повышение скорости загрузки страниц</li>
+                                <li class="exist"><i class="icons">
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Танцы с бубном</li>
+                                <li class="exist"><i class="icons">
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Внедрение новейших инструментов поисковых систем	</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>МАРКЕТОЛОГ</h4>
+                            </div>
+                            <p>Анализирует конкурентов, заимствует лучшие практики и придумывает свои.</p>
+                            <ul>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ особенностей рынка</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ сайтов конкурентов</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ воронки продаж</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ путей продвижения</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Выработка рекомендаций</li>
+                            </ul>
+                        </div>
+                    </div>
+                   <div class="special-box-wrapper">
+                    <div class="special-box">
+                        <img src="" alt="">
+                        <div class="heading">
+                            <h4>КОПИРАЙТЕР</h4>
+                        </div>
+                        <p>Пишет оригинальный контент Вам на сайт - статьи, новости, описание товаров и услуг и т.д.</p>
+                        <ul>
+                            <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                            </svg></i>Написание оригинальных текстов</li>
+                            <li class="missing"><i>
+                                <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                </svg>
+                            </i>Скучный рерайт</li>
+                            <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                            </svg></i>Публикация материалов на сайт</li>
+                            <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                            </svg></i>Публикация оригинального контента в Яндекс.Дзен</li>
+                            <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                            </svg></i>Заполнение карточек товаров</li>
+                        </ul>
+                    </div>
+                   </div>
+                </div>
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>ПРОГРАММИСТ</h4>
+                            </div>
+                            <p>Исправляет ошибки/вносит изменения в код сайта. Говорит всем как правильно.</p>
+                            <ul>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Исправление ошибок в коде сайта</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Внесение изменений в код сайта</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Поддержка сайта в рабочем состоянии</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Разработка новых модулей</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Устранение угроз безопасности</li>
+                                <li class="missing"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                </svg></i>Общение простым языком</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>UI/UX ДИЗАЙНЕР</h4>
+                            </div>
+                            <p>Анализирует поведение пользователей на сайте и ведет их ближайшим путем к покупке</p>
+                            <ul>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ пользовательского поведения</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Разработка воронки продаж</li>
+                                <li class="missing"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                                </svg></i>Банальные решения</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Оптимизация страниц под продажи</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Добавление тригеров для повышения конверсии</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Облегчение восприятия информации</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>ПЕРСОНАЛЬНЫЙ МЕНЕДЖЕР</h4>
+                            </div>
+                            <p>Отправляет вам отчеты, акты сверок и выставляет счета. Но самое главное - рассказываем вам все о том, что происходит с вашим сайтом.</p>
+                            <ul>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Анализ позиций сайта</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Составление отчетов</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Ведение документооборота</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Запрос необходимой информации</li>
+                                <li class="exist"><i><svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                </svg></i>Преобразование технического языка в простой, человеческий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	
+        <section class="statistic-title">
+            <div class="container">
+                <div class="statistics-wrapper">
+                    <p>Немного статистики</p>
+                </div>
+            </div>
+        </section>
+        <section class="stat">
+            <div class="container">
+                <div class="stat-wrapper">
+                    <div class="twenty">
+                        <span>24%</span>
+                        <p>Людей стараются не переходить по рекламе</p>
+                    </div>
+                    <div class="seventy">
+                        <span>72%</span>
+                        <p>Заявок приходят из поиска</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stage">
+            <div class="container">
+                <div class="stage-wrapper">
+                    <h2>этапы SEO-продвижения</h2>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Заключение договора с компанией Лидер Рынка</h6>
+                            <span>13%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 13%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Определение тематики и региональности вашего сайта</h6>
+                            <span>17%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 17%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Определение и написание метатегов и микроразметки</h6>
+                            <span>27%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 27%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Исправление критических ошибок на сайте</h6>
+                            <span>55%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Улучшение юзабилити сайта</h6>
+                            <span>63%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 63%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Исправление мелких ошибок кода и верстки</h6>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Публикация оригинальных материалов</h6>
+                            <span>82%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Использование всех фишек и рекомендаций поисковых систем</h6>
+                            <span>91%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 91%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Работа с внешними факторами ранжирования</h6>
+                            <span>97%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 97%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-head">
+                            <h6>Немного магии</h6>
+                            <span>100%</span>
+                        </div>
+                        <div class="progress-line">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-title">
+            <div class="container">
+                <div class="top-wrapper">
+                    <p>Вывод в ТОП неизбежен</p>
+                </div>
+            </div>
+        </section>
+       <section class="tariff-top">
+            <div class="container">
+                <div class="tariff-top-wrapper">
+                    <div class="cards cards-dotted">
+                        <div id="card1" class="card-dot price-site" data-tilt="true" data-tilt-perspective="6000" style="will-change: transform; transform: perspective(6000px) rotateX(0deg) rotateY(0deg);">
+                            <div class="title">
+                                <h5>Техническая оптимизация</h5>
+                            </div>
+                            <span class="card-price">от 17 000</span>
+                            <ul class="card-list">
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 300 запросов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>1 Город</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>1 Час программиста</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>1 Оригинальная статья</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Оптимизация метатегов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Отчет раз в месяц</li>
+                            </ul>
+                            <a class="btn-card" href="forma.html">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="cards cards-dotted">
+                        <div id="card2" class="card-dot price-site" data-tilt="true" data-tilt-perspective="6000" style="will-change: transform; transform: perspective(6000px) rotateX(0deg) rotateY(0deg);">
+                            <div class="title">
+                                <h5 class="oran-text">Полная оптимизация</h5>
+                            </div>
+                            <span class="card-price">от 24 900</span>
+                            <ul class="card-list">
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 1000 запросов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 5 городов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>6 Часов программиста</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 2 оригинальных статей</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Оптимизация метатегов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Настройка микроразметки</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Настройка пикселей</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ конкурентов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ динамики запросов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ динамики позиций</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ пользовательского поведения</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Выработка рекомендаций</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Отчетность 2 раза в месяц</li>
+                            </ul>
+                            <a class="btn-card" href="forma.html">Заказать</a>
+                        </div>
+                    </div>
+                    <div class="cards cards-dotted">
+                        <div id="card3" class="card-dot price-site" data-tilt="true" data-tilt-perspective="6000" style="will-change: transform; transform: perspective(6000px) rotateX(0deg) rotateY(0deg);">
+                            <div class="title">
+                                <h5>Лидер Рынка</h5>
+                            </div>
+                            <span class="card-price">от 64 000</span>
+                            <ul class="card-list">
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Неограниченное количество запросов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 15 городов продвижения</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>12 Часов программиста</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>До 4 оригинальных статей</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Оптимизация контента</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Оптимизация метатегов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Настройка микроразметки</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Настройка Memcahed</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Оптимизация работы с сервером</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Настройка пикселей</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ конкурентов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ динамики запросов</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ динамики позиций</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ пользовательского поведения</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Анализ конверсий</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Проработка воронки продаж</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Выработка рекомендаций</li>
+                                <li class="card-service"><i>
+                                    <svg class="default" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" fill="#BB5D29"></path>
+                                    </svg>
+                                </i>Отчетность раз в неделю</li>
+                            </ul>
+                            <a class="btn-card" href="forma.html">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="dark-scheme" style="padding-bottom: 4vh;">
+            <div class="container">
+            <h2  style = "text-shadow: 1px 3px 3px #bb5d29; text-align: center; font-size: 3.05rem; padding-top: 4vh; padding-bottom: 4vh; margin: 0;">Вот почему выбирают нас</h2>
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Конфиденциальность</h4>
+                            </div>
+                            <p>Обязательное соглашение о неразглашении коммерческой тайны (NDA)</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Простой язык</h4>
+                            </div>
+                            <p>Чтобы клиенту было проще понимать о чем идет речь, мы переводим сложные термины на простой язык</p>
+                           
+                        </div>
+                    </div>
+                   <div class="special-box-wrapper">
+                    <div class="special-box">
+                        <img src="" alt="">
+                        <div class="heading">
+                            <h4>Успешные кейсы</h4>
+                        </div>
+                        <p>Мы УЖЕ помогли множеству компаний найти клиентов в интернете. Поможем и вам!</p>
+                       
+                    </div>
+                   </div>
+                </div>
+                <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Компетентность</h4>
+                            </div>
+                            <p>Все работы выполняются строго по техническому заданию</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Креативность</h4>
+                            </div>
+                            <p>Наши идеи всегда на шаг впереди конкурентов. Всё, чтобы быть Лидером Рынка!</p>
+                       
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Комплексный подход</h4>
+                            </div>
+                            <p>Смотрим на задачи с разных углов и предлагаем множество эффективных решений</p>
+                         
+                        </div>
+                    </div>
+                </div>
+                 <div class="special-wrapper">
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Выгодные цены</h4>
+                            </div>
+                            <p>Все услуги в одном месте - так мы гарантируем результат и выгодные цены</p>
+                           
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>Отчетность</h4>
+                            </div>
+                            <p>Фирменные отчеты по каждой из услуг</p>
+                       
+                        </div>
+                    </div>
+                    <div class="special-box-wrapper">
+                        <div class="special-box">
+                            <i></i>
+                            <div class="heading">
+                                <h4>И много чего еще...</h4>
+                            </div>
+                            <p>Что можно узнать только во время работы с нами</p>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="send">
+            <div class="container">
+                <div class="send-wrapper">
+                    <div class="send-left">
+                        <div class="send-title">
+                            <p>Обратная связь</p>
+                            <h2>Пора начинать работу.</h2>
+                        </div>
+                        <div class="send-img">
+                            <img width="336px" height="226px" src="assets/img/man.png" alt="">
+                        </div>
+                        <p class="send-subtitle">Мы обладаем большим опытом в реализации интересных проектов. И еще гораздо бОльшим желанием реализовать новые задумки наших клиентов. Вы с нами?</p>
+                    </div>
+                    <div class="send-right">
+                        <form method="post" action="/" class="send-form">
+                            <div class="line">
+                                <input name="name" autocomplete="given-name" type="string">
+                                <div class="form-control-label">
+                                    <p> Имя <span style="color: red;">*</span></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="line">
+                                <input type="string">
+                                <div class="form-control-label">
+                                    <p>Сайт</p>
+                                </div>
+                                
+                            </div>
+                            <div class="line">
+                                <input type="tel" name="phone" autocomplete="tel">
+                                <div class="form-control-label">
+                                    <p> Телефон <span style="color: red;">*</span></p>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="line">
+                                <textarea name="" id=""></textarea>
+                                <div class="form-control-label">
+                                    <p>Комментарий</p>
+                                </div>
+                                
+                            </div>
+                            <label for="rule-checkbox" class="text-rule" for="">
+                                <input type="checkbox" id="rule-checkbox" onclick="this.blur()">
+                                <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+                                <span style="font-size: 11px; line-height: 1; color: red;">*</span>
+                            </label>
+                            <button type="submit" class="send-btn">Отправить</button>
+                            <div class="form-sign">
+                                <a href="#">Сообщить о нарушении</a>
+                                <span class="form-help" title="Компания Битрикс24 не несёт ответственности за содержимое формы, но вы можете сообщить нам о нарушении"></span>
+                                <div class="form-sign-info">
+                                    <span class="form-sign-info-text">Заряжено</span>
+                                    <span class="form-sign-info-bx">Битрикс</span>
+                                    <span class="form-sign-info-24">24</span>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                <div class="under-line">
+                    <div class="divider-set"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="logo-footer">
+                    <img src="assets/img/logopre.png" alt="">
+                    <div class="footer-link">
+                        <strong>
+                            <a href="https://vk.com/sozdaniesaytovekb">VK.</a>
+                            &nbsp;/&nbsp;&nbsp;
+                            <a href="https://www.youtube.com/channel/UCCBKaQ6S506gMABGScOCZCg">YouTube.</a>
+                            &nbsp;&nbsp;/&nbsp;&nbsp;
+                            <a href="https://dzen.ru/id/5ebfd20fa6e4861b14010105?utm_referrer=lider-rynka-seo-prodvizhenie-sayta.com">Dzen.</a>
+                        </strong>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h3>Екатерибург</h3>
+                    <strong>
+                        <b>Ул. Чернышевского 16</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+						<br>
+						ООО "Лидер Рынка"
+						<br>
+						ИНН:6676008274
+                    </strong>
+                </div>
+                <div class="contact">
+                    <h3>Санкт-Петербург</h3>
+                    <strong>
+                        <b>Ул. Большая Морская 3-5</b>
+                        <br>
+                        +7 343 206 47 96
+                        <br>
+                        Пон. - Пят | 09:00 - 19:00
+                        <br>
+                        lieder.rynka@yandex.ru
+                    </strong>
+                </div>
+                <div class="sub">
+                    <h3>Подписка на полезные материалы</h3>
+                    <form action="/" class="sub-form">
+                        <div class="sub-email-top">
+                            <input type="email" placeholder="Email..." name="your-email" class="sub-email">
+                            <button class="btn-sub">Подписаться</button>
+                        </div>
+                        <label for="checkbox-101[]" class="sub-check">
+                            <input type="checkbox" id="checkbox-101[]" name="checkbox-101[]" value="Я согласен на рассылку оповещений о новых материалах на указанную почту">
+                            <span class="check-text">Я согласен на рассылку оповещений о новых материалах на указанную почту</span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/black-header-fixed.js"></script>
+    <script src="assets/js/drop-menu-uslugi.js"></script>
+    <script src="assets/js/main-burger-menu.js"></script>
+    <script src="assets/js/background-ceil.js"></script>
+    <script src="assets/js/mobile-block-info-tabs.js"></script>
+		<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96321582, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/96321582" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</body>
+</html>
